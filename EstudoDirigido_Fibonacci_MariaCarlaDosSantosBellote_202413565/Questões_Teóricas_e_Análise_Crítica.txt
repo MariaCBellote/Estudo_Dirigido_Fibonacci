@@ -11,10 +11,13 @@
 2-Por que a fórmula de Binet raramente é utilizada em produção para valores grandes de \(n\)?
     Porque utiliza números irracionais e operações em ponto flutuante, que podem gerar erros de arredondamento. Além disso, potências muito grandes podem ultrapassar os limites numéricos disponíveis. Por isso, métodos como o iterativo ou o fast doubling são geralmente preferidos quando se exige precisão.
 
-3- 
+3- Como os conceitos de protótipo, assinatura, coerção de argumentos e encapsulamento ajudaram (ou limitaram) a implementação?
+     O protótipo permite declarar a função, já estabelecendo tipo e parâmetros. Com isso é possível chamá-la antes de sua definição. A assinatura da função identifica a função por seu nome e pelos tipos e pela ordem dos parâmetros. Ela ajuda o compilador a verificar se as chamadas são compatíveis com a declaração.O encapsulamento, aplicado à classe CalculadoraFibonacci, permite separar os detalhes internos da implementação das operações disponibilizadas ao usuário. Esses conceitos facilitaram a organização, a manutenção e a segurança do código. Como limitação, exigem atenção aos tipos, às declarações e aos limites dos métodos para evitar erros de compilação, conversões indesejadas e resultados incorretos.
 
-4-
+4- n pequeno e código didático: recomendaria o modelo recursivo. Ele representa diretamente a forma matemática de fibonacci e facilita o aprendizado.
+n moderado e necessidade de desempenho: recomendaria binet por utilizar uma expressão matemática direta, sem precisar percorrer todos os termos anteriores. É importante considerar possíveis erros, por causa da imprecisão numérica causa pelo cálculo das entradas em ponto flutuante.
+n muito grande:  recomendaria o modelo iterativo. Sua complexiadade é O(n) e seu espaço auxiliar O(1). Evita a chamada da função várias vezes e o recalculo de termos.
 
-5-
+5- A inicialização estabelece o valor inicial de um atributo no momento em que o objeto é criado. Já a atribuição modifica o valor de um atributo que já foi inicializado.
 
-6-
+6- Declarar os membros de dados como private protege a implementação interna da classe contra alterações externas indevidas. Dessa forma, o usuário interage com o objeto por meio de operações públicas, como recursivo(), iterativo(), binet() e compararMetodos(), sem precisar conhecer todos os detalhes de seu funcionamento.
