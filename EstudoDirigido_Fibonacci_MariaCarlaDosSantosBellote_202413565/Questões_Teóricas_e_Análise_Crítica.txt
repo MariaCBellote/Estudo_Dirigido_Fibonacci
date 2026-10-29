@@ -2,3 +2,19 @@
 
  Questões Teórica e Análise Crítica sobre Fibonacci e seus algoritmos
 
+1-Vantagens e desvantagens dos modelos
+    Recursivo clássico: é simples e representa diretamente a definição matemática, mas repete cálculos, possui tempo exponencial \(O(2^n)\) e utiliza mais memória devido à pilha de execução.
+    Iterativo bottom-up: é eficiente, com tempo \(O(n)\) e espaço \(O(1)\). Evita cálculos repetidos e chamadas recursivas, mas exige o controle das variáveis auxiliares.
+    Fórmula de Binet: permite calcular diretamente um termo e é matematicamente elegante, mas pode apresentar erros de arredondamento e limitações numéricas para valores grandes de \(n\).
+
+
+2-Por que a fórmula de Binet raramente é utilizada em produção para valores grandes de \(n\)?
+    Porque utiliza números irracionais e operações em ponto flutuante, que podem gerar erros de arredondamento. Além disso, potências muito grandes podem ultrapassar os limites numéricos disponíveis. Por isso, métodos como o iterativo ou o fast doubling são geralmente preferidos quando se exige precisão.
+
+3- 
+
+4-
+
+5-
+
+6-
